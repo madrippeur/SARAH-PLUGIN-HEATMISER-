@@ -1,0 +1,11 @@
+
+.plugin-gridster.heatmiser .front {
+  background: #FFFFFF url('images/heatmiser.png') center 0px;
+  background-size:   180px 170px;
+  background-repeat: no-repeat;
+}
+
+.plugin-gridster.freeboxOS .back {
+  background: #FFFFFF;
+}
+}
