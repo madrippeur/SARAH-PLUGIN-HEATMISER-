@@ -61,10 +61,9 @@ exports.action = function(data, callback, config, SARAH){
 		post_req.write(post_data);  
 		post_req.end();
   //pour moi, on recupére aussi un fichier sur le serveur
-  //http://maison.caiveau.fr/sarah/heatmiser/html/reglage-manuel.php
-    var url = 'http://192.168.1.110/sarah/heatmiser/html/reglage-manuel.php';
-  var request = require('request');
-  request({ 'uri' : url , method: "POST"}, function (err, response, body){});
+  //  var url = 'http://192.168.1.110/sarah/heatmiser/html/reglage-manuel.php';
+  //var request = require('request');
+  //request({ 'uri' : url , method: "POST"}, function (err, response, body){});
    	callback({'tts': 'Température réglée à ' + data.action + ' degrés !' });
  	}
 //ENVOI DE LA TEMP
