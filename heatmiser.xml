@@ -1,0 +1,95 @@
+<grammar version="1.0" xml:lang="fr-FR" mode="voice" root="ruleheatmiser" xmlns="http://www.w3.org/2001/06/grammar" tag-format="semantics/1.0">
+	<rule id="ruleheatmiser" scope="public">
+		<tag>out.action=new Object(); </tag> 
+		<item>Sarah</item>
+			<one-of>
+        <item>Régle le thermostat à <tag>out.action.commande="settemp"; </tag>
+              <one-of>
+                <item>vingt et un degrés	<tag>out.action.action="21"; </tag></item>
+          			<item>vingt degrés				<tag>out.action.action="20"; </tag></item>
+          			<item>dix neuf degrés			<tag>out.action.action="19"; </tag></item>
+          			<item>dix huit degrés			<tag>out.action.action="18"; </tag></item>
+          			<item>dix sept degrés			<tag>out.action.action="17"; </tag></item>
+          			<item>seize degrés				<tag>out.action.action="16"; </tag></item>
+          			<item>quinze degrés				<tag>out.action.action="15"; </tag></item>
+          			<item>quatorze degrés				<tag>out.action.action="14"; </tag></item>
+          			<item>treize degrés				<tag>out.action.action="13"; </tag></item>
+          			<item>douze degrés				<tag>out.action.action="12"; </tag></item>
+          			<item>onze degrés				<tag>out.action.action="11"; </tag></item>
+          			<item>dix degrés				<tag>out.action.action="10"; </tag></item>
+          			<item>neuf degrés				<tag>out.action.action="9"; </tag></item>
+          			<item>huit degrés				<tag>out.action.action="8"; </tag></item>
+          			<item>sept degrés				<tag>out.action.action="7"; </tag></item>
+          			<item>six degrés				<tag>out.action.action="6"; </tag></item>
+          			<item>cinq degrés				<tag>out.action.action="5"; </tag></item>
+              </one-of>
+    		</item>
+	  		<item>mets le thermostat en position été<tag>out.action.commande="ver"; </tag></item>
+	  		<item>mets le thermostat en position hivers<tag>out.action.commande="dever"; </tag></item>
+
+				<item>je veux le chauffage à <tag>out.action.commande="holdtemp"; </tag>
+							<one-of>
+                <item>vingt et un degrès pendant <tag>out.action.action="21"; </tag>
+                  <one-of>
+                    <item>trente minutes<tag>out.action.hour="00"; out.action.min="30"; </tag></item>
+                    <item>une heure<tag>out.action.hour="01"; out.action.min="00"; </tag></item>
+                    <item>une heure 30 minutes<tag>out.action.hour="01"; out.action.min="30"; </tag></item>
+                    <item>deux heures<tag>out.action.hour="02"; out.action.min="00"; </tag></item>
+                    <item>deux heures 30 minutes<tag>out.action.hour="02"; out.action.min="30"; </tag></item>
+                    <item>trois heures<tag>out.action.hour="03"; out.action.min="00"; </tag></item>
+                  </one-of></item>
+                <item>vingt degrès pendant <tag>out.action.action="20"; </tag>
+                  <one-of>
+                    <item>trente minutes<tag>out.action.hour="00"; out.action.min="30"; </tag></item>
+                    <item>une heure<tag>out.action.hour="01"; out.action.min="00"; </tag></item>
+                    <item>une heure 30 minutes<tag>out.action.hour="01"; out.action.min="30"; </tag></item>
+                    <item>deux heures<tag>out.action.hour="02"; out.action.min="00"; </tag></item>
+                    <item>deux heures 30 minutes<tag>out.action.hour="02"; out.action.min="30"; </tag></item>
+                    <item>trois heures<tag>out.action.hour="03"; out.action.min="00"; </tag></item>
+                  </one-of></item>
+                <item>dix neuf degrès pendant <tag>out.action.action="19"; </tag>
+                  <one-of>
+                    <item>trente minutes<tag>out.action.hour="00"; out.action.min="30"; </tag></item>
+                    <item>une heure<tag>out.action.hour="01"; out.action.min="00"; </tag></item>
+                    <item>une heure 30 minutes<tag>out.action.hour="01"; out.action.min="30"; </tag></item>
+                    <item>deux heures<tag>out.action.hour="02"; out.action.min="00"; </tag></item>
+                    <item>deux heures 30 minutes<tag>out.action.hour="02"; out.action.min="30"; </tag></item>
+                    <item>trois heures<tag>out.action.hour="03"; out.action.min="00"; </tag></item>
+                  </one-of></item>
+                <item>dix huit degrès pendant <tag>out.action.action="18"; </tag>
+                  <one-of>
+                    <item>trente minutes<tag>out.action.hour="00"; out.action.min="30"; </tag></item>
+                    <item>une heure<tag>out.action.hour="01"; out.action.min="00"; </tag></item>
+                    <item>une heure 30 minutes<tag>out.action.hour="01"; out.action.min="30"; </tag></item>
+                    <item>deux heures<tag>out.action.hour="02"; out.action.min="00"; </tag></item>
+                    <item>deux heures 30 minutes<tag>out.action.hour="02"; out.action.min="30"; </tag></item>
+                    <item>trois heures<tag>out.action.hour="03"; out.action.min="00"; </tag></item>
+                  </one-of></item>
+                <item>dix sept degrès pendant <tag>out.action.action="17"; </tag>
+                  <one-of>
+                    <item>trente minutes<tag>out.action.hour="00"; out.action.min="30"; </tag></item>
+                    <item>une heure<tag>out.action.hour="01"; out.action.min="00"; </tag></item>
+                    <item>une heure 30 minutes<tag>out.action.hour="01"; out.action.min="30"; </tag></item>
+                    <item>deux heures<tag>out.action.hour="02"; out.action.min="00"; </tag></item>
+                    <item>deux heures 30 minutes<tag>out.action.hour="02"; out.action.min="30"; </tag></item>
+                    <item>trois heures<tag>out.action.hour="03"; out.action.min="00"; </tag></item>
+                  </one-of></item>
+                <item>seize degrès pendant <tag>out.action.action="16"; </tag>
+                  <one-of>
+                    <item>trente minutes<tag>out.action.hour="00"; out.action.min="30"; </tag></item>
+                    <item>une heure<tag>out.action.hour="01"; out.action.min="00"; </tag></item>
+                    <item>une heure 30 minutes<tag>out.action.hour="01"; out.action.min="30"; </tag></item>
+                    <item>deux heures<tag>out.action.hour="02"; out.action.min="00"; </tag></item>
+                    <item>deux heures 30 minutes<tag>out.action.hour="02"; out.action.min="30"; </tag></item>
+                    <item>trois heures<tag>out.action.hour="03"; out.action.min="00"; </tag></item>
+                  </one-of></item>
+          		</one-of>
+          
+        </item>
+    
+    </one-of>
+    <tag>out.action._attributes.uri="http://127.0.0.1:8080/sarah/heatmiser";</tag>
+
+    
+  </rule> 
+</grammar>
